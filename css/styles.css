@@ -475,6 +475,7 @@ button:not(:disabled),
 
 .d-flex {
   display: flex !important;
+  color: #757575 ; /* Gris Bootstrap (var(--bs-secondary)) */
 }
 
 .d-none {
@@ -517,6 +518,7 @@ button:not(:disabled),
 
 .mb-5 {
   margin-bottom: 3rem !important;
+  color: #757575;
 }
 
 .p-0 {
@@ -763,3 +765,5 @@ h1, .h1 {
   align-items: center;
   text-align: center;
 }
+
+
