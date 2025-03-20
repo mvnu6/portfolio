@@ -1,9 +1,9 @@
 @charset "UTF-8";
 :root {
-  --bs-primary: rgb(#2272ff);
+  --bs-primary: rgb(255, 52, 34);
   --bs-secondary: #6c757d;
   --bs-dark: #212529;
-  --bs-primary-rgb: 34, 114, 255;
+  --bs-primary-rgb: 255, 52, 34;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -13,11 +13,16 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #1e1f20;
-  --bs-link-color: #06429c;
-  --bs-link-hover-color: #06429c;
+  --bs-body-bg: #ffffff;
+  --bs-link-color: #9c1706;
+  --bs-link-hover-color: #9c0b06;
   --bs-highlight-bg: #fff3cd;
 }
+
+body {
+  background-color: var(--bs-body-bg);
+}
+
 
 *,
 *::before,
@@ -155,8 +160,8 @@ button:not(:disabled),
 .img-fluid {
   max-width: 100%;
   height: auto;
-  border-radius: 50%; /* Rend l'image circulaire */
-  object-fit: cover; /* Assure que l'image remplit bien le cadre */
+  border-radius: 50%; 
+  object-fit: cover; 
 }
 
 
@@ -663,13 +668,13 @@ h1, .h1 {
 }
 
 .social-icons .social-icon:hover {
-  background-color: #06429c;
+  background-color: #9c0b06;
   transform: scale(1.30); 
 }
 
 .zoom-in {
   background: linear-gradient(145deg, #2a2a2a, #383838);
-  border: 2px solid #3f51b5;
+  border: 2px solid #b53f3f;
 }
 
 .social-icons .social-icon.zoom-in:hover {
@@ -733,7 +738,7 @@ h1, .h1 {
 
 .text {
   background-color: transparent;  
-  border: 2px solid #0412aa;  
+  border: 2px solid #aa0c04;  
   color: #ffffff;  
   font-size: 16px;
   padding: 16px 32px;
@@ -746,9 +751,9 @@ h1, .h1 {
 }
 
 .text:hover {
-  background-color: #0412aa;  
+  background-color: #aa0704;  
   color: white;  
-  border-color: #06429c;  
+  border-color: #9c1006;  
 }
 
 
