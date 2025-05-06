@@ -783,20 +783,7 @@ h3,
   max-height: 400px;
 }
 
-.image-de-projet {
-  opacity: 1;
-  display: block;
-  width: 200%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-  object-fit: cover;
-  max-width: 150%;
-  max-height: 4500px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
+
 
 
 .middle {
