@@ -1,0 +1,372 @@
+@import "https://unpkg.com/aos@2.3.1/dist/aos.css";
+
+:root {
+    --bs-primary: rgb(255, 52, 34);
+    --bs-secondary: #6c757d;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 255, 52, 34;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0));
+    --bs-body-font-family: Muli, -apple-system, BlinkMacSystemFont, Segoe UI,
+        Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+        Segoe UI Symbol, Noto Color Emoji;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #ffffff;
+    --bs-link-color: #9c1706;
+    --bs-link-hover-color: #9c0b06;
+    --bs-highlight-bg: #fff3cd;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    padding-top: 3.375rem;
+    color: #6c757d;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 0;
+        padding-left: 17rem;
+    }
+}
+
+a {
+    color: var(--bs-link-color);
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ffff;
+}
+
+h1 {
+    font-size: calc(1.725rem + 5.7vw);
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+h2 {
+    font-size: calc(1.475rem + 2.7vw);
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+h3 {
+    font-size: calc(1.325rem + 0.9vw);
+}
+
+@media (min-width: 1200px) {
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.subheading {
+    font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.mb-5 {
+    margin-bottom: 3rem !important;
+    color: #757575;
+}
+
+.resume-section {
+    padding: 3rem 0;
+    min-height: 100vh;
+}
+
+@media (min-width: 992px) {
+    .resume-section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.text-primary {
+    color: rgba(var(--bs-primary-rgb), 1) !important;
+}
+
+.bg-primary {
+    background-color: rgba(var(--bs-primary-rgb), 1) !important;
+}
+
+.social-icons .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons .social-icon:last-child {
+    margin-right: 0;
+}
+
+.social-icons .social-icon:hover {
+    background-color: #9c0b06;
+    transform: scale(1.3);
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.justify-content-between {
+    justify-content: space-between !important;
+}
+
+@media (min-width: 768px) {
+    .flex-md-row {
+        flex-direction: row !important;
+    }
+}
+
+/* Project Cards */
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: transparent;
+    border: 2px solid #aa0c04;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.text:hover {
+    background-color: #aa0704;
+    color: white;
+    border-color: #9c1006;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Navbar styles */
+#sideNav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+    #sideNav {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+    }
+
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
+}
+
+.navbar-dark {
+    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.resume-section img {
+    margin-right: 50px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
