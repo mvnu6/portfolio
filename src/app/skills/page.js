@@ -28,13 +28,13 @@ export default function Skills() {
         { icon: "fa-brands fa-js fa-4x", margin: true },
         { icon: "fa-brands fa-python fa-4x", margin: true },
         { icon: "fa-brands fa-java fa-4x", margin: true },
-        { image: "assets/img/C_Programming_Language.svg.png", width: 70 }
+        { image: "../asssets/img/C_Programming_Language.svg.pdf", width: 70 }
       ]
     },
     {
       title: "Base de données",
       skills: [
-        { image: "assets/img/mysql.png", width: 80 },
+        { image: "../assets/img/mysql.png", width: 80 },
         { image: "assets/img/Postgresql_elephant.svg.png", width: 80 },
         { image: "assets/img/mongodb.png", width: 180 }
       ]
