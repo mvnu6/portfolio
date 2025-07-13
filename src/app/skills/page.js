@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import SkillSection from '../../components/skillSection';
 
+
 export default function Skills() {
   useEffect(() => {
     AOS.init({
@@ -28,13 +29,13 @@ export default function Skills() {
         { icon: "fa-brands fa-js fa-4x", margin: true },
         { icon: "fa-brands fa-python fa-4x", margin: true },
         { icon: "fa-brands fa-java fa-4x", margin: true },
-        { image: "../asssets/img/C_Programming_Language.svg.pdf", width: 70 }
+        { image: "/asssets/img/C_Programming_Language.svg.pdf", width: 70 }
       ]
     },
     {
       title: "Base de données",
       skills: [
-        { image: "../assets/img/mysql.png", width: 80 },
+        { image: "/assets/img/mysql.png", width: 80 },
         { image: "assets/img/Postgresql_elephant.svg.png", width: 80 },
         { image: "assets/img/mongodb.png", width: 180 }
       ]
@@ -66,7 +67,7 @@ export default function Skills() {
           <SkillSection 
             key={index}
             title={category.title}
-            skills={category.skills}
+            icons={category.skills}
             delay={index * 100}
           />
         ))}

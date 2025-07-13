@@ -49,31 +49,13 @@ export default function Resume() {
             <div className="experience-item" data-aos="fade-up" data-aos-delay="100">
               <div className="d-flex flex-column flex-md-row justify-content-between mb-4">
                 <div>
-                  <h4>En recherche d'alternance</h4>
-                  <div className="subheading">Développeur Web Full Stack</div>
-                  <p>À la recherche d'une opportunité d'alternance à partir de septembre 2025 pour mettre en pratique mes compétences en développement web et applications.</p>
+                  <h4>HeadMind  partners</h4>
+                  <div className="subheading">technicien support </div>
+                  <p>j'ai developpé des compétence en résolution de problémes techniques, assistance aux utilisateurset maintenance des systémes, contribuant à garantir la continuité des services numériques. </p>
                 </div>
-                <div className="experience-date">À partir de Sept. 2025</div>
+                <div className="experience-date">de Mai-2024 à Août-2024</div>
               </div>
             </div>
-          </div>
-          
-          <div className="mt-5 certification-section">
-            <h3 className="mb-4" data-aos="fade-up">Certifications</h3>
-            <ul className="list-unstyled">
-              <li className="mb-2" data-aos="fade-up" data-aos-delay="100">
-                <div className="d-flex align-items-center">
-                  <i className="fa-solid fa-certificate me-3 text-primary"></i>
-                  <span>Certification en HTML5 et CSS3</span>
-                </div>
-              </li>
-              <li className="mb-2" data-aos="fade-up" data-aos-delay="150">
-                <div className="d-flex align-items-center">
-                  <i className="fa-solid fa-certificate me-3 text-primary"></i>
-                  <span>Certification JavaScript Avancé</span>
-                </div>
-              </li>
-            </ul>
           </div>
           
           <div className="mt-5 languages-section">
@@ -88,7 +70,7 @@ export default function Resume() {
               <li className="mb-2" data-aos="fade-up" data-aos-delay="150">
                 <div className="d-flex align-items-center">
                   <i className="fa-solid fa-language me-3 text-primary"></i>
-                  <span>Anglais - Niveau professionnel</span>
+                  <span>Anglais - Niveau academique </span>
                 </div>
               </li>
             </ul>

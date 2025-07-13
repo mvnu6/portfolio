@@ -22,7 +22,6 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <Link href="/" className="navbar-brand js-scroll-trigger">
-        <span className="d-block d-lg-none">Emmanuel Mbengo Mayemba</span>
         <span className="d-none d-lg-block">
           <Image
             className="img-fluid img-profile rounded-circle mx-auto mb-2"
